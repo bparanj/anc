@@ -37,4 +37,6 @@ For Twitter Bootstrap 4, you can use this:
    Subscribe to the free <a href='https://itunes.apple.com/us/podcast/rails-screencast/id1142573687'>Rails Screencasts </a> Now!
 </div>
 
+Start the server and go to: http://localhost:3000/welcome/index
+
 http://railscasts.com/episodes/103-site-wide-announcements-revised?view=asciicast
