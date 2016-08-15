@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anc</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	<div id="announcement"> Download the <a href='https://www.rubyplus.com'>Top 10 Mistakes Rails Developers</a> Make Now!</div>
+	  
+    <%= yield %>
+	
+	
+	<script type='text/javascript'>
+	 $('#announcement').delay(5000).fadeOut('slow');
+	</script>
+	
+  </body>
+</html>

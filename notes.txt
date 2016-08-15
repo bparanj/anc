@@ -1,0 +1,40 @@
+Add to application layout file:
+
+<div id="announcement"> Download the <a href='https://www.rubyplus.com'>Top 10 Mistakes Rails Developers</a> Make Now!</div>
+
+Add the jQuery to hide the announcement after 5 seconds:
+
+$('#announcement').delay(5000).fadeOut('slow');
+
+The layout file looks like this:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anc</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+	<div id="announcement"> Download the <a href='https://www.rubyplus.com'>Top 10 Mistakes Rails Developers</a> Make Now!</div>
+	  
+    <%= yield %>
+	
+	
+	<script type='text/javascript'>
+	 $('#announcement').delay(5000).fadeOut('slow');
+	</script>
+	
+  </body>
+</html>
+
+For Twitter Bootstrap 4, you can use this:
+
+<div class="alert alert-info" id='announcement'>
+   Subscribe to the free <a href='https://itunes.apple.com/us/podcast/rails-screencast/id1142573687'>Rails Screencasts </a> Now!
+</div>
+
+http://railscasts.com/episodes/103-site-wide-announcements-revised?view=asciicast
